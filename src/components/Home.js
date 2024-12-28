@@ -7,7 +7,7 @@ export default function Home() {
 
   const [news,setNews] = useState([])
 
-  console.log(news)
+  // console.log(news)
 
   const addnews = async(data) => {
     const newsDoc = doc(database,'News',`${data.url.substr(-10,10)}`)
@@ -30,7 +30,7 @@ export default function Home() {
         getNews()
     },[news])
 
-    console.log(news)
+    // console.log(news)
 
   return (
     
