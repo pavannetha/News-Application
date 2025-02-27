@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { doc, setDoc } from 'firebase/firestore';
 import { database } from '../firebase/setup';
 
-export default function Home() {
+ export default function Home() {
   const [news, setNews] = useState([]);
 
   const addNews = async (data) => {
